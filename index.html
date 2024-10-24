@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hot Burger</title>
+  </head>
+  <body class="bg-[#1E1E1E]">
+    <header
+      class="flex font-Bowlby justify-between items-center max-w-screen-xl px-6 py-4 mx-auto"
+    >
+      <h1 class="text-white lg:text-2xl">Hot burger</h1>
+
+      <nav class="text-white flex items-center gap-10">
+        <a class="hidden lg:block" href="#sobre">Sobre</a>
+        <a class="hidden lg:block" href="#menu">Menu</a>
+        <a class="hover:scale-105 hover:bg-orange-500 hover:text-slate-200 bg-orange-600 text-white p-4 rounded-md" href="#"
+          >Fazer Pedido</a
+        >
+      </nav>
+    </header>
+
+    <section
+      class="font-Bowlby flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between h-svh max-w-screen-xl mx-auto px-5"
+    >
+      <div>
+        <h2
+          class="text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-16"
+        >
+          King Burger
+        </h2>
+
+        <a class="bg-orange-500 text-white px-4 py-3 rounded-md" href="#"
+          >Pedir Online</a
+        >
+      </div>
+
+      <img class="hover:scale-105 w-2/4" src="assets/burger.png" alt="" />
+    </section>
+
+    <section id="sobre"
+      class="bg-orange-400 2xl:mx-auto rounded-xl max-w-screen-xl mx-5 px-10 py-20"
+    >
+      <div
+        class="flex items-center lg:items-start flex-col lg:flex-row justify-center gap-5 lg:gap-10"
+      >
+        <h2 class="text-4xl font-Bowlby">
+          Como Chegamos <br />
+          Até Aqui
+        </h2>
+        <div>
+          <p class="max-w-96 font-sans text-xl pb-5">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Praesentium dolore excepturi, nostrum nobis officiis autem nisi
+          </p>
+          <a
+            class="block w-max bg-red-600 text-white px-4 py-3 rounded-md font-Bowlby"
+            href="#"
+            >Saiba Mais</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="max-w-screen-xl mx-auto mt-20">
+      <h2 class="text-white text-center font-medium text-4xl">Catalago</h2>
+
+      <ul class="flex flex-wrap gap-10 justify-around items-centr m-10">
+        <li class="text-white h-96 flex flex-col justify-between">
+          <img class="hover:scale-105 w-64 h-52" src="assets/classic.png" alt="" />
+
+          <h3 class="text-orange-500 text-2xl font-medium my-2">
+            Classic Burger
+          </h3>
+          <p>Lorem ipsum dolor sit amet</p>
+
+          <div class="flex justify-between items-center mt-7 text-2xl">
+            <p class="font-medium">$19,99</p>
+            <span class="hover:scale-105 cursor-pointer text-4xl bg-black rounded-full px-3 pb-2">+</span>
+          </div>
+        </li>
+
+        <li class="text-white h-96 flex flex-col justify-between">
+          <img class="hover:scale-105 w-64" src="assets/ckicken.png" alt="" />
+
+          <h3 class="text-orange-500 text-2xl font-medium my-2">
+            Ckicken Burger
+          </h3>
+          <p>Lorem ipsum dolor sit amet</p>
+
+          <div class="flex justify-between items-center mt-7 text-2xl">
+            <p class="font-medium">$23,99</p>
+            <span class="hover:scale-105 cursor-pointer text-4xl bg-black rounded-full px-3 pb-2">+</span>
+          </div>
+        </li>
+
+        <li class="text-white h-96 flex flex-col justify-between">
+          <img class="hover:scale-105 w-64" src="assets/whopper.png" />
+
+          <h3 class="text-orange-500 text-2xl font-medium my-2">
+            Wropper Burger
+          </h3>
+          <p>Lorem ipsum dolor sit amet</p>
+
+          <div class="flex justify-between items-center mt-7 text-2xl">
+            <p class="font-medium">$32,99</p>
+            <span class="hover:scale-105 cursor-pointer text-4xl bg-black rounded-full px-3 pb-2">+</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-orange-400 2xl:mx-auto rounded-xl text-center max-w-screen-xl mx-5 mb-10 px-10 py-20">
+      <h2 class="text-4xl text-white font-Bowlby pb-5">Receba Promoções</h2>
+      <input class="px-5 py-2 rounded-full m-5" type="email" name="email" id="email" placeholder="Email">
+      <input class="cursor-pointer px-5 py-3 rounded-full bg-orange-600 text-white" type="button" value="Inscrever-se" required>
+    </section>
+
+    <footer class="bg-orange-500">
+      <p class="text-white text-center font-medium p-5">&copy;2024 hotburger. Todos os direitos estão reservados</p>
+    </footer>
+  </body>
+</html>
